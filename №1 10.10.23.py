@@ -1,0 +1,8 @@
+a = int(input())
+b = int(input())
+c = int(input())
+k1 = round((a + b + c) / 3, 6)
+k2 = round(3 / (a ** (-1) + b ** (-1) + c ** (-1)), 6)
+k3 = round(a + b + c - max(a, b, c) - min(a, b, c), 6)
+k4 = round(max(a, b, c) ** min(a, b, c) / k3, 6)
+print(k1, k2, k3, k4, sep='; ')
